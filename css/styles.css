@@ -169,6 +169,13 @@ img {
   text-decoration: none;
 
   padding: 24px 0 28px 0;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-heading:hover,
+.header-heading:focus {
+  color: var(--part-logo-color);
 }
 
 .hero-header {
@@ -279,8 +286,10 @@ img {
   background-color: var(--second-part-logo-color);
   color: var(--part-logo-color);
   border: 1px solid var(--footer-text);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button:hover,
@@ -296,8 +305,8 @@ img {
   padding: 16px 32px;
   color: var(--main-header);
   background-color: var(--part-logo-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -372,8 +381,8 @@ img {
   letter-spacing: 0.02em;
   font-style: normal;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-selection:hover,
@@ -444,8 +453,7 @@ img {
   border-radius: 50%;
   fill: var(--second-part-logo-color);
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .foot-info-link:hover,
@@ -497,8 +505,7 @@ img {
   background-color: var(--part-logo-color);
   border-radius: 50%;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .members-socials-link:hover,
@@ -529,8 +536,8 @@ img {
   border: 1px solid #8e8f99;
   border-radius: 4px;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company-link:hover,
@@ -555,8 +562,7 @@ img {
   display: block;
   text-decoration: none;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .galary-item-link:hover,
@@ -590,11 +596,11 @@ img {
   color: var(--second-part-logo-color);
   background-color: var(--part-logo-color);
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.galary-item-link:hover .change-text {
+.galary-item-link:hover .change-text,
+.galary-item-link:focus .change-text {
   top: 0;
 }
 
@@ -622,8 +628,12 @@ img {
   align-items: center;
 
   opacity: 1;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -667,7 +677,4 @@ img {
   border-radius: 50%;
   cursor: pointer;
   /* position: absolute; */
-
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
